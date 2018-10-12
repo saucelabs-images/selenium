@@ -115,7 +115,7 @@ public class SafariDriverService extends DriverService {
     }
 
     protected ImmutableList<String> createArgs() {
-      return ImmutableList.of("--port", String.valueOf(getPort()));
+      return ImmutableList.of("--port", String.valueOf(getPort()), "--legacy");
     }
 
     protected SafariDriverService createDriverService(
